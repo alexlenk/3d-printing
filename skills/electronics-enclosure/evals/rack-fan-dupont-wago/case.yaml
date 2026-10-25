@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: rack-fan-dupont-wago
+expected_outcome: |
+  A base.stl and lid.stl (print orientation) plus spec.json and README. check.py reports no problems.
+  The layout uses the box space (no crowding warnings left unexplained), cable entries are not
+  squeezed next to the ESP, the lid snaps on and fits both ways round, the ESP and buck latches
+  avoid the antenna and the edge capacitors, and the README lists what to verify before printing.

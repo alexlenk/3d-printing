@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: pico-relay-box
+expected_outcome: |
+  The skill asks for (or, with no user available, lists) the missing facts - photos, relay terminal
+  positions, buck pin layout - states its assumptions, and still delivers a checked design:
+  base.stl, lid.stl, spec.json, renders and a README with a verify-before-printing list. Boards are
+  held (latches or standoffs), cable entries for the valves have strain relief, the layout is spread
+  and symmetric, check.py reports no problems.

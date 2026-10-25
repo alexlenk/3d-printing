@@ -1,0 +1,25 @@
+{
+ "name": "TEMPLATE - replace every value with the user's measured parts",
+ "inner": [90.0, 60.0, 34.0],
+ "boards": [
+  {"id": "mcu", "size": [50.0, 25.0, 1.6], "at": [2.0, 17.5], "rot": 0, "rim_skip": ["x-"],
+   "parts": [
+     {"name": "usb-c", "box": [-2.0, 8.03, 0, 5.5, 16.97, 3.2], "metal": true},
+     {"name": "led", "box": [20.0, 11.5, 0, 22.0, 13.5, 0.8]}],
+   "rows": [{"start": [3.0, 1.27], "n": 18}, {"start": [3.0, 23.73], "n": 18}],
+   "ledges": [[0, 2.0, 3.0, 22.0], [47.5, 50.0, 3.0, 22.0]],
+   "latches": [{"edge": "x+", "at": 12.5, "width": 3.0}]}
+ ],
+ "blocks": [
+  {"id": "terminal", "size": [15.0, 10.0, 12.0], "at": [70.0, 40.0], "metal": true, "cradle": {"open": ["y-"]}}
+ ],
+ "panel_parts": [],
+ "openings": [
+  {"id": "usb", "type": "usb-c", "wall": "left", "align": "mcu/usb-c", "label": "USB"},
+  {"id": "cable", "type": "hole", "wall": "right", "u": 30.0, "z": 10.0, "d": 6.0, "label": "IN"}
+ ],
+ "vents": [],
+ "anchors": [{"at": [80.0, 30.0], "rot": 90}],
+ "lid": {"fix": "snap", "windows": [{"at": "mcu/led", "d": 3.0}]},
+ "mount": {"magnets": {}, "tabs": {}}
+}
